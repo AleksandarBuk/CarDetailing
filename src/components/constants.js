@@ -1,9 +1,7 @@
-
-
 export const navLinks = [
     {
         title: 'Početna',
-        href: '#home'
+        href: '/'
     },
     {
         title: 'O nama',

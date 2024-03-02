@@ -22,14 +22,14 @@ const CallToAction = () => {
         tabIndex={0}
         aria-label="Contact us for more information"
       >
-        Contact Us
+        Kontaktiraj Nas
       </button>
       {showContactInfo && (
         <div className="modal-background">
           <div className="modal-container">
             <button className="modal-close-button" onClick={handleClose}>X</button>
             <div className="text-center">
-              <p>Get your car the treatment it deserves:</p>
+              <p>Obezbedite svom automobilu tretman koji zaslužuje</p>
               <p>Email: agency@email.com</p>
               <p>Phone: +123456789</p>
             </div>

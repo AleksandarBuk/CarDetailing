@@ -23,7 +23,7 @@ const Navbar = () => {
 
   const handleNavClick = (nav) => {
     if (nav.title === "Pocetna") {
-      window.location.href = '/';
+      return;
     }
     if (nav.title === "O nama") {
       const section = document.getElementById('about-me');
@@ -33,9 +33,10 @@ const Navbar = () => {
         window.location.href = '/#aboutme';
       }
     } else if (nav.title === "Kontakt") {
-      alert("andjela.dro.photography@gmail.com");
+      window.location.href = '/contact'; // Corrected link to Contact component
     }
   };
+  
 
   return (
     <nav className={`w-full flex py-6 justify-between items-center ${styles.navbarBg}`}>
