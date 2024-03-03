@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import styles from '../style';
 
-const Contact = () => {
+const Kontakt = () => {
   const [formData, setFormData] = useState({
-    name: '',
+    ime: '',
     email: '',
-    message: ''
+    poruka: ''
   });
 
   const handleChange = (e) => {
@@ -18,47 +18,47 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here, e.g., send data to backend
+    // Obradi podatke forme ovde, npr., pošalji podatke na backend
     console.log(formData);
-    // Clear form fields after submission
+    // Očisti polja forme nakon slanja
     setFormData({
-      name: '',
+      ime: '',
       email: '',
-      message: ''
+      poruka: ''
     });
   };
 
   return (
     <section className={`${styles.flexCenter} ${styles.paddingY}`}>
       <div className={`container mx-auto ${styles.padding}`}>
-        <h2 className={`${styles.heading2} text-center`}>Contact Us</h2>
+        <h2 className={`${styles.heading2} text-center`}>Kontaktirajte nas</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
-            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="mt-1 p-2 border border-gray-300 rounded-md w-full" />
+            <label htmlFor="ime" className="block text-sm font-medium text-gray-700">Ime</label>
+            <input type="text" id="ime" name="ime" value={formData.ime} onChange={handleChange} className="mt-1 p-2 border border-gray-300 rounded-md w-full" />
           </div>
           <div className="mb-4">
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
             <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="mt-1 p-2 border border-gray-300 rounded-md w-full" />
           </div>
           <div className="mb-4">
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-            <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows="4" className="mt-1 p-2 border border-gray-300 rounded-md w-full"></textarea>
+            <label htmlFor="poruka" className="block text-sm font-medium text-gray-700">Poruka</label>
+            <textarea id="poruka" name="poruka" value={formData.poruka} onChange={handleChange} rows="4" className="mt-1 p-2 border border-gray-300 rounded-md w-full"></textarea>
           </div>
-          <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Submit</button>
+          <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Pošalji</button>
         </form>
         <p className={`${styles.paragraph} mt-4`}>
-          Or you can reach us via email at: andjeodetailing@gmail.com
+          Ili nas možete kontaktirati putem e-pošte na: andjeodetailing@gmail.com
         </p>
         <p className={`${styles.paragraph} mt-4`}>
-          Or give us a call at: +1234567890
+          Ili nas pozovite na: +1234567890
         </p>
         <p className={`${styles.paragraph} mt-4`}>
-          Our address: 123 Street Name, Novi Sad, Vojvodina
+          Naša adresa: 123 Ulica, Novi Sad, Vojvodina
         </p>
       </div>
     </section>
   );
 };
 
-export default Contact;
+export default Kontakt;

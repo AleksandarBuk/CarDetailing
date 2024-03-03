@@ -3,14 +3,14 @@ import styles from '../style';
 
 const AboutUs = () => {
   return (
-    <section id="about-me" className={`${styles.flexCenter} ${styles.paddingY}`}>
+    <section id="o-nama" className={`${styles.flexCenter} ${styles.paddingY}`}>
       <div className={`container mx-auto ${styles.padding}`}>
-        <h2 className={`${styles.heading2} text-center`}>About Us</h2>
+        <h2 className={`${styles.heading2} text-center`}>O nama</h2>
         <p className={`${styles.paragraph} mt-4`}>
-          Welcome to Andjeo Detailing! We are passionate about car cleaning and pay meticulous attention to detail. Our team is dedicated to providing the highest standard of service, ensuring that every aspect of your car wash experience is impeccable.
+          Dobrodošli u Andjeo Detailing! Strastveno se bavimo čišćenjem automobila i obraćamo pažnju na svaki detalj. Naš tim je posvećen pružanju najvišeg standarda usluge, osiguravajući da je svaki aspekt vašeg iskustva prilikom pranja automobila besprekoran.
         </p>
         <p className={`${styles.paragraph} mt-4`}>
-          At Andjeo Detailing, we use state-of-the-art equipment and eco-friendly products to not only clean your car but also contribute to a cleaner environment. Trust us to maintain your vehicle's brilliance, leaving it feeling brand new every time.
+          U Andjeo Detailing-u koristimo najsavremeniju opremu i ekološki prihvatljive proizvode kako bismo ne samo očistili vaš automobil, već i doprineli čistijem okruženju. Obezbedite nam da održimo sjaj vašeg vozila, ostavljajući ga svaki put kao potpuno novo.
         </p>
       </div>
     </section>

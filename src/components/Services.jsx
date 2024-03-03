@@ -1,30 +1,30 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import styles from '../style';  // Importing styles
-import { interior, exterior } from "../assets";  // Imported images
+import styles from '../style';  // Uvoz stila
+import { interior, exterior } from "../assets";  // Uvoz slika
 
-const Services = () => {
+const Usluge = () => {
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
     <section className={`${styles.flexCenter} ${styles.paddingY} services-section`}>
-      <div className={`service ${styles.flexCenter} flex-col ${styles.padding} ${styles.marginY}`} data-aos="fade-right" data-aos-delay="300">
-        {/* Using the imported exterior image */}
-        <img src={exterior} alt="Exterior Detailing" />
-        <h2 className={`${styles.heading2}`}>Exterior Detailing</h2>
-        <p className={`${styles.paragraph} ${styles.paragraphMargin}`}>Detailed exterior cleaning to restore the vehicle's shine.</p>
+      <div className={`usluga ${styles.flexCenter} flex-col ${styles.padding} ${styles.marginY}`} data-aos="fade-right" data-aos-delay="300">
+        {/* Korišćenje uvožene slike eksterijera */}
+        <img src={exterior} alt="Detaljno čišćenje eksterijera" />
+        <h2 className={`${styles.heading2}`}>Eksterijer</h2>
+        <p className={`${styles.paragraph} ${styles.paragraphMargin}`}>Detaljno čišćenje spoljašnjosti kako bi se povratio sjaj vozila.</p>
       </div>
-      <div className={`service ${styles.flexCenter} flex-col ${styles.padding} ${styles.marginY}`} data-aos="fade-left" data-aos-delay="250">
-        {/* Using the imported interior image */}
-        <img src={interior} alt="Interior Detailing" />
-        <h2 className={`${styles.heading2}`}>Interior Detailing</h2>
-        <p className={`${styles.paragraph} ${styles.paragraphMargin}`}>Thorough interior cleaning for a spotless cabin environment.</p>
+      <div className={`usluga ${styles.flexCenter} flex-col ${styles.padding} ${styles.marginY}`} data-aos="fade-left" data-aos-delay="250">
+        {/* Korišćenje uvožene slike enterijera */}
+        <img src={interior} alt="Detaljno čišćenje enterijera" />
+        <h2 className={`${styles.heading2}`}>Interijer</h2>
+        <p className={`${styles.paragraph} ${styles.paragraphMargin}`}>Grundirano čišćenje unutrašnjosti za besprekoran ambijent kabine.</p>
       </div>
     </section>
   );
 };
 
-export default Services;
+export default Usluge;
