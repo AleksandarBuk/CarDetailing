@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import styles from './style';
-import { Navbar, Introduction, Services, AboutMain, Footer, CTA, Contact } from "./components";
+import { Navbar, Introduction, Services, AboutMain, AboutUs, Footer, CTA, Contact } from "./components";
 
 export const App = () => {
   const [loadAnimation, setLoadAnimation] = useState(styles.fadeInScaleUp);
@@ -35,6 +35,7 @@ export const App = () => {
             </div>
           } />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
       </div>
     </Router>

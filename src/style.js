@@ -1,11 +1,12 @@
 const styles = {
     boxWidth: "xl:max-w-[1280px] w-full",
 
+    // Updated text colors to grayscale with a hint of blue for accents
     heading2: "font-poppins font-semibold xs:text-[48px] text-[40px] text-gray-300 xs:leading-[76.8px] leading-[66.8px]",
     paragraph: "font-poppins font-normal text-gray-400 text-[20px] leading-[30.8px]",
-    heading3: "font-poppins font-semibold italic xs:text-[48px] text-[32px] text-gray-300 xs:leading-[your_choice]",
+    heading3: "font-poppins font-semibold italic xs:text-[48px] text-[32px] text-blue-200 xs:leading-[your_choice]",
 
-
+    // Keeping layout and spacing styles unchanged for now
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",
 
@@ -14,6 +15,7 @@ const styles = {
     padding: "sm:px-16 px-6 sm:py-12 py-4",
     padding_p_am: "sm:px-8 sm:py-3",
 
+    // Additional styles for paragraphs to enhance readability
     paragraphMargin: {
         margin: '20px',
     },
@@ -26,12 +28,13 @@ const styles = {
 
     fadeInScaleUp: "animation-class-names-here",
 
-    navBackground: "px-6 py-4 flex justify-center bg-gradient-to-r from-gray-600 to-gray-800",
-    albumDetailBackground: "from-gray-600 to-gray-800 bg-gradient-to-r",
-    aboutMeBackground: "from-gray-600 to-gray-700 bg-gradient-to-r",
-    mainContentBackground: "flex justify-center items-start bg-gradient-to-r from-gray-600 to-gray-900",
+    // Updated background gradients to include subtle blue
+    navBackground: "px-6 py-4 flex justify-center bg-gradient-to-r from-gray-700 to-blue-900",
+    albumDetailBackground: "from-gray-700 to-blue-900 bg-gradient-to-r",
+    aboutMeBackground: "from-gray-800 to-blue-800 bg-gradient-to-r",
+    mainContentBackground: "flex justify-center items-start bg-gradient-to-r from-gray-900 to-blue-900",
 
-    albumDetailContainer: "bg-gradient-to-r from-gray-600 to-gray-900 flex flex-col items-center justify-center",
+    albumDetailContainer: "bg-gradient-to-r from-gray-900 to-blue-900 flex flex-col items-center justify-center",
     mainImageContainer: "w-full max-w-[900px] max-h-[1000px] overflow-hidden",
     mainImage: "max-w-full max-h-full object-contain",
     thumbnailContainer: "flex overflow-x-auto py-2.5 max-w-90vw",
@@ -42,12 +45,12 @@ const styles = {
 };
 
 export const sloganStyle = {
-    slogan: "text-3xl font-bold text-indigo-600 underline decoration-wavy decoration-indigo-500",
-  };
+    slogan: "text-3xl font-bold text-blue-500 underline decoration-wavy decoration-blue-500",
+};
 
 export const ctaButton = {
     padding: '10px 20px',
-    backgroundColor: '#FFD700', // Consider aligning with logo color if different
+    backgroundColor: '#0000FF', // A classic blue for call-to-action buttons
     color: 'white',
     borderRadius: '5px',
     textTransform: 'uppercase',

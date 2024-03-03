@@ -22,7 +22,7 @@ const Navbar = () => {
   }, []); 
 
   const handleNavClick = (nav) => {
-    if (nav.title === "Pocetna") {
+    if (nav.title === "Početna") {
       return;
     }
     if (nav.title === "O nama") {
@@ -30,10 +30,10 @@ const Navbar = () => {
       if (section) {
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
       } else {
-        window.location.href = '/#aboutme';
+        window.location.href = '/aboutus';
       }
     } else if (nav.title === "Kontakt") {
-      window.location.href = '/contact'; // Corrected link to Contact component
+      window.location.href = '/contact';
     }
   };
   
